@@ -43,9 +43,11 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="slogan" alt="Слоган сайта города «Седона»" src="">
+      <img class="welcome-logo" alt="Приветственный слоган сайта города «Седона»" src="">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages-info"></p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+        <p class="advantages-intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
@@ -86,6 +88,47 @@
           </li>
         </ul>
       </section>
+
+      <section class="promo">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="promo-intro"><b>Заинтересовались?</b></p>
+        <p class="promo-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="promo-button button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </section>
+
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscribe-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <input class="button subscribe-button" type="submit" value="Подписаться">
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-phone-number" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/">
+          <img class="footer-logo" alt="Лого htmlacademy" src="">
+        </a>
+      </footer>
     </main>
 
   </body>
