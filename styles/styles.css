@@ -22,9 +22,31 @@ body {
   background-color: #ffffff;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-brown {
+  background: #756157;
+}
+
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 /* Pages */
 
 .section-title {
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -46,7 +68,7 @@ body {
 .section-promo {
   text-align: center;
   background-image: url("../images/promo-background.jpg");
-  background-color: cadetblue;
+  background-color: #DC6243;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -90,9 +112,13 @@ body {
   color: #ffffff;
   text-align: center;
   background-image: url("../images/index-subscribe-background.jpg");
-  background-color: cadetblue;
+  background-color: #DC6243;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  color: #ffffff;
 }
 
 .page-footer a {
@@ -103,4 +129,86 @@ body {
 .footer-phone-number {
   font-size: 40px;
   line-height: 40px;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.top-wrapper {
+  color: #ffffff;
+  background-image: url("../images/catalog-background.jpg");
+  background-color: #DC6243;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.filter-button-reset {
+  background: none;
+}
+
+.hotel-card a {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-type,
+.hotel-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-favourites-added {
+  background-color: #7DB54F;
+}
+
+.hotel-stars,
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hotel-rating {
+  text-align: center;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
 }
