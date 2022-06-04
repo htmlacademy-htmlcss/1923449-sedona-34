@@ -212,3 +212,13 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+
+.section-subscribe-catalog {
+  color: inherit;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.section-subscribe-catalog .subscribe-title {
+  color: #000000;
+}
