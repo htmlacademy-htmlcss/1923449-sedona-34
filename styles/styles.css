@@ -52,13 +52,8 @@ img {
   text-transform: uppercase;
 }
 
-.button-brown {
+.button-alternative-color {
   background: #756157;
-}
-
-.button-big {
-  font-size: 20px;
-  line-height: 36px;
 }
 
 /* Pages */
@@ -123,6 +118,12 @@ img {
 
 .section-search {
   text-align: center;
+}
+
+.search-button,
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .section-subscribe {
@@ -198,7 +199,7 @@ img {
   line-height: 21px;
 }
 
-.button-favourites-added {
+.button-favourites-selected {
   background-color: #7DB54F;
 }
 
