@@ -81,8 +81,7 @@ img {
   text-align: center;
   background-image: url("../images/promo-background.jpg");
   background-color: #DC6243;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-advantages {
@@ -157,8 +156,7 @@ img {
   color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
   background-color: #DC6243;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .breadcrumbs-link {
