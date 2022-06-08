@@ -15,6 +15,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -22,9 +23,9 @@ body {
   background-color: #F2F2F2;
 }
 
-.page-footer,
-.page-footer,
-main {
+.page-container {
+  width: 1200px;
+  margin: auto;
   background-color: #FFF;
 }
 
