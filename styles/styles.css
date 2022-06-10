@@ -25,7 +25,9 @@ html {
 }
 
 body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
@@ -37,9 +39,9 @@ body {
 .page-container {
   margin: 0 auto;
   width: 1200px;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   background-color: #FFF;
 }
 
@@ -247,6 +249,35 @@ img {
   text-decoration: none;
 }
 
+.catalog-filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-left {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.catalog-filter-right {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -314,6 +345,6 @@ img {
   background-image: none;
 }
 
-.section-subscribe-catalog {
+.subscribe-title-catalog {
   color: #000000;
 }
