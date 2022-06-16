@@ -85,15 +85,14 @@ img {
   color: #000;
 }
 
-.footer-wrapper,
-.header-wrapper {
+.flex-wrapper {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navigation {
-  margin-left: auto;
   display: flex;
   width: 890px;
 }
@@ -203,10 +202,6 @@ img {
 .page-footer a {
   color: #000000;
   text-decoration: none;
-}
-
-.footer-wrapper {
-  justify-content: space-between;
 }
 
 .footer-social-list {
