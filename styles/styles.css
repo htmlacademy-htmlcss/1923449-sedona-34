@@ -322,18 +322,38 @@ img {
 /* catalog page */
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 60px;
   line-height: 78px;
 }
 
-.top-wrapper {
+.catalog-header {
+  padding-top: 30px;
+  padding-bottom: 70px;
   color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
   background-color: #DC6243;
   background-size: cover;
 }
 
+.catalog-header-content {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
+  min-width: 12px;
+  min-height: 12px;
+  margin-right: 25px;
   color: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -383,6 +403,34 @@ img {
   background: none;
 }
 
+/* Catalog section */
+
+.section-catalog {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.sorting-wrapper {
+  display: flex;
+  margin-top: 55px;
+  margin-bottom: 56px;
+}
+
+.catalog-title {
+  margin: 0;
+}
+
+.sorting-wrapper .button {
+  width: 48px;
+  height: 48px;
+}
+
+.hotel-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .hotel-card-link {
   text-decoration: none;
 }
@@ -416,7 +464,29 @@ img {
   text-transform: uppercase;
 }
 
+/* Catalog bottom */
+
+.catalog-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 23px;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
