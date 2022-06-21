@@ -143,7 +143,7 @@ img {
 
 .navigation-button {
   display: block;
-  width: 160px;
+  min-width: 160px;
   padding: 9px;
   color: #fff;
 }
