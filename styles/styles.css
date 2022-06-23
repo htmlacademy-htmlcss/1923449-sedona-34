@@ -91,6 +91,8 @@ img {
   text-transform: uppercase;
 }
 
+/* header */
+
 .page-header {
   color: #000;
 }
@@ -148,6 +150,8 @@ img {
   color: #fff;
 }
 
+/* promo section */
+
 .section-promo {
   text-align: center;
   background-image: url("../images/promo-background.jpg");
@@ -159,6 +163,8 @@ img {
   margin-top: 51px;
   margin-bottom: 82px;
 }
+
+/* advantages section */
 
 .section-advantages {
   text-align: center;
@@ -234,6 +240,8 @@ img {
   line-height: 21px;
 }
 
+/* search section */
+
 .section-search {
   text-align: center;
   padding-top: 91px;
@@ -253,6 +261,8 @@ img {
 .search-text {
   margin-bottom: 56px;
 }
+
+/* subscribe section */
 
 .search-button,
 .subscribe-button {
@@ -279,6 +289,8 @@ img {
   margin: 0;
   margin-bottom: 46px;
 }
+
+/* footer */
 
 .page-footer {
   padding-top: 40px;
@@ -326,6 +338,8 @@ img {
   font-size: 60px;
   line-height: 78px;
 }
+
+/* catalog header */
 
 .catalog-header {
   padding-top: 30px;
