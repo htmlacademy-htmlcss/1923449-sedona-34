@@ -432,6 +432,11 @@ img {
 
 .catalog-title {
   margin: 0;
+  margin-right: 191px;
+}
+
+.select-control {
+  margin-right: auto;
 }
 
 .sorting-wrapper .button {
