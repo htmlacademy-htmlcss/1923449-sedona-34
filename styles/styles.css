@@ -91,6 +91,8 @@ img {
   text-transform: uppercase;
 }
 
+/* header */
+
 .page-header {
   color: #000;
 }
@@ -144,9 +146,12 @@ img {
 .navigation-button {
   display: block;
   min-width: 160px;
-  padding: 9px;
+  padding-top: 9px;
+  padding-bottom: 8px;
   color: #fff;
 }
+
+/* promo section */
 
 .section-promo {
   text-align: center;
@@ -159,6 +164,8 @@ img {
   margin-top: 51px;
   margin-bottom: 82px;
 }
+
+/* advantages section */
 
 .section-advantages {
   text-align: center;
@@ -234,6 +241,8 @@ img {
   line-height: 21px;
 }
 
+/* search section */
+
 .section-search {
   text-align: center;
   padding-top: 91px;
@@ -253,6 +262,8 @@ img {
 .search-text {
   margin-bottom: 56px;
 }
+
+/* subscribe section */
 
 .search-button,
 .subscribe-button {
@@ -279,6 +290,8 @@ img {
   margin: 0;
   margin-bottom: 46px;
 }
+
+/* footer */
 
 .page-footer {
   padding-top: 40px;
@@ -326,6 +339,8 @@ img {
   font-size: 60px;
   line-height: 78px;
 }
+
+/* catalog header */
 
 .catalog-header {
   padding-top: 30px;
@@ -417,24 +432,54 @@ img {
 
 .catalog-title {
   margin: 0;
+  margin-right: 191px;
+}
+
+.select-control {
+  margin-right: auto;
 }
 
 .sorting-wrapper .button {
   width: 48px;
   height: 48px;
+  border: black 1px solid;
 }
 
 .hotel-list {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style-type: none;
+  column-gap: 18px;
+  margin: 0;
+  margin-bottom: 66px;
+  padding: 0;
+}
+
+.hotel-card {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
+.hotel-card p {
+  margin: 0;
 }
 
 .hotel-card-link {
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
+.hotel-card-image {
+  display: block;
+}
+
 .hotel-card-title {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
@@ -457,7 +502,16 @@ img {
   line-height: 20px;
 }
 
+.button-more,
+.button-favorites {
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
 .hotel-rating {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 8px;
   text-align: center;
   background-color: #F2F2F2;
   text-transform: uppercase;
