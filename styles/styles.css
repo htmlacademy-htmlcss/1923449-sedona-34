@@ -65,6 +65,7 @@ img {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -75,6 +76,7 @@ img {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-alternative-color {
@@ -144,7 +146,6 @@ img {
 }
 
 .navigation-button {
-  display: block;
   min-width: 160px;
   padding-top: 9px;
   padding-bottom: 8px;
@@ -267,8 +268,13 @@ img {
 
 .search-button,
 .subscribe-button {
+  padding: 12px 0;
   font-size: 20px;
   line-height: 36px;
+}
+
+.search-button {
+  min-width: 574px;
 }
 
 .section-subscribe {
@@ -278,6 +284,15 @@ img {
   background-image: url("../images/index-subscribe-background.jpg");
   background-color: #DC6243;
   background-size: cover;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-button {
+  min-width: 200px;
 }
 
 .subscribe-title {
@@ -392,6 +407,40 @@ img {
 }
 
 .catalog-filter-group {
+  border: 0;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.catalog-filter-title {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.catalog-filter-item + .catalog-filter-item {
+  margin-top: 15px;
+}
+
+.control-input {
+  margin: 0;
+}
+
+.filter-button-submit {
+  width: 160px;
+  padding: 14px 0;
+  margin-bottom: 20px;
+}
+
+.filter-button-reset {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.catalog-filter-group {
   margin: 0;
   padding: 0;
   width: 160px;
@@ -428,6 +477,10 @@ img {
   display: flex;
   margin-top: 55px;
   margin-bottom: 56px;
+}
+
+.sorting-wrapper .button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .catalog-title {
