@@ -244,13 +244,38 @@ img {
   background-color: #82B3D3;
 }
 
+.additional-advantage::before {
+  content: "";
+  color: #83B3D3;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 75px;
+  height: 76px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.housing::before {
+  background-image: url("../images/icons/housing.svg");
+}
+
+.food::before {
+  background-image: url("../images/icons/food.svg");
+}
+
+.souvenir::before {
+  background-image: url("../images/icons/souvenir.svg");
+}
+
 .advantages-text-wrapper {
   width: 400px;
   min-height: 384px;
   padding: 0 85px;
   display:flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items:center;
 }
 
