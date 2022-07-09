@@ -64,6 +64,8 @@ img {
   object-fit: contain;
 }
 
+/* Buttons */
+
 .button {
   display: inline-block;
   font-family: inherit;
@@ -84,12 +86,49 @@ img {
   background-color: #68A2CA;
 }
 
+.button:focus {
+  background-color: #68A2CA;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-alternative-color {
-  background: #756157;
+  background-color: #756157;
 }
 
 .button-alternative-color:hover {
   background-color: #615048;
+}
+
+.button-alternative-color:focus {
+  background-color: #615048;
+}
+
+.button-alternative-color:active {
+  background-color: #756157;
+}
+
+.button-selected {
+  background-color: #7DB54F;
+}
+
+.button-selected:hover {
+  background-color: #6C9E42;
+}
+
+.button-selected:focus {
+  background-color: #6C9E42;
+}
+
+.button-selected:active {
+  background: #7DB54F;
 }
 
 /* Pages */
@@ -156,8 +195,7 @@ img {
 }
 
 .navigation-link:focus {
-  box-shadow: inset 0 0 0 4px #e7e7e7;
-  outline: none;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .navigation-link-current::before {
@@ -417,26 +455,32 @@ img {
 }
 
 .footer-social-link {
+  position: relative;
   display: block;
   width: 47px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.footer-social-telegram {
-  background-size: 18px 16px;
-  background-image: url("../images/icons/telegram.svg");
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
-.footer-social-vk {
-  background-size: 24px 14px;
-  background-image: url("../images/icons/vk.svg");
+.footer-social-link:hover .social-icon {
+  fill: #68A2CA;
 }
 
-.footer-social-youtube {
-  background-size: 22px 17px;
-  background-image: url("../images/icons/youtube.svg");
+.footer-social-link:focus .social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -449,8 +493,36 @@ img {
   line-height: 40px;
 }
 
+.footer-phone-number:hover {
+  color: #756157;
+}
+
+.footer-phone-number:focus {
+  color: #756157;
+}
+
+.footer-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-link-wrapper {
   width: 115px;
+}
+
+.footer-logo-academy {
+  fill: #000;
+}
+
+.footer-logo-link:hover .footer-logo-academy {
+  fill: #756157;
+}
+
+.footer-logo-link:focus .footer-logo-academy {
+  fill: #756157;
+}
+
+.footer-logo-link:active .footer-logo-academy {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* catalog page */
@@ -597,7 +669,7 @@ img {
   margin-bottom: 56px;
 }
 
-.sorting-wrapper .button:not(:last-child) {
+.card-grid-toggle:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -610,29 +682,30 @@ img {
   margin-right: auto;
 }
 
-.sorting-wrapper .button {
+.card-grid-toggle {
   width: 48px;
   height: 48px;
   background-color: #fff;
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
 }
 
-.sorting-wrapper .button-selected {
+.card-grid-toggle-current {
   border: 2px solid #000000;
 }
 
-.button-cards {
+.card-grid-toggle-cards {
   background-image: url("../images/icons/tile.svg");
 }
 
-.button-gallery {
+.card-grid-toggle-gallery {
   background-image: url("../images/icons/slideshow.svg");
 }
 
-.button-list {
+.card-grid-toggle-list {
   background-image: url("../images/icons/list.svg");
 }
 
@@ -681,10 +754,6 @@ img {
 .hotel-price {
   font-size: 18px;
   line-height: 21px;
-}
-
-.button-favourites-selected {
-  background-color: #7DB54F;
 }
 
 .hotel-stars,
