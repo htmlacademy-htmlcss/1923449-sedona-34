@@ -355,6 +355,10 @@ img {
   text-transform: uppercase;
 }
 
+.advantages-image-wrapper-bridge {
+  order: -1;
+}
+
 .advantages-image {
   display: block;
   margin: 0;
