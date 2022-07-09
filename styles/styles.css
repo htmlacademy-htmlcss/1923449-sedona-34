@@ -190,11 +190,11 @@ img {
   text-decoration: none;
 }
 
-.navigation-link:hover {
+.navigation-link:hover:not(.navigation-link-current) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.navigation-link:focus {
+.navigation-link:focus:not(.navigation-link-current) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -560,13 +560,44 @@ img {
   list-style-type: none;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 25px;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 10px;
+  height: 21px;
+  background-image: url("../images/icons/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
 
 .breadcrumbs-link {
   min-width: 12px;
   min-height: 12px;
-  margin-right: 25px;
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
+  opacity: 1;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
@@ -655,6 +686,23 @@ img {
   background: none;
 }
 
+.filter-button-reset:hover {
+  opacity: 0.6;
+  background: none;
+}
+
+.filter-button-reset:focus {
+  background: none;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter-button-reset:active {
+  opacity: 0.3;
+  background: none;
+  outline: none;
+}
+
 /* Catalog section */
 
 .section-catalog {
@@ -692,6 +740,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
+}
+
+.card-grid-toggle:hover {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle:focus {
+  border: 2px solid #68A2CA;
+}
+
+.card-grid-toggle:active {
+  border: 2px solid #000000;
 }
 
 .card-grid-toggle-current {
@@ -831,7 +891,23 @@ img {
   line-height: 36px;
   text-decoration: none;
   background-color: #82B3D3;
+  border: 1px solid #82B3D3;
   border-radius: 4px;
+}
+
+.pagination-link:hover:not(.pagination-current) {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+
+.pagination-link:focus:not(.pagination-current) {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+
+.pagination-link:focus:not(.pagination-current) {
+  background: #82B3D3;
+  border: 1px solid #82B3D3;
 }
 
 .pagination-current {
