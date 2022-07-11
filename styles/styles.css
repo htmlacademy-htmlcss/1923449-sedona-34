@@ -311,9 +311,7 @@ img {
   background-color: #82B3D3;
 }
 
-.additional-advantage::before {
-  content: "";
-  color: #83B3D3;
+.advantages-icon {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -324,15 +322,15 @@ img {
   background-position: center;
 }
 
-.housing::before {
+.advantages-icon-housing {
   background-image: url("../images/icons/housing.svg");
 }
 
-.food::before {
+.advantages-icon-food {
   background-image: url("../images/icons/food.svg");
 }
 
-.souvenir::before {
+.advantages-icon-souvenir {
   background-image: url("../images/icons/souvenir.svg");
 }
 
