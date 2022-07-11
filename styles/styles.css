@@ -484,10 +484,7 @@ img {
   fill: #83B3D3;
 }
 
-.footer-social-link:hover .social-icon {
-  fill: #68A2CA;
-}
-
+.footer-social-link:hover .social-icon,
 .footer-social-link:focus .social-icon {
   fill: #68A2CA;
 }
@@ -506,10 +503,7 @@ img {
   line-height: 40px;
 }
 
-.footer-phone-number:hover {
-  color: #756157;
-}
-
+.footer-phone-number:hover,
 .footer-phone-number:focus {
   color: #756157;
 }
@@ -526,10 +520,7 @@ img {
   fill: #000;
 }
 
-.footer-logo-link:hover .footer-logo-academy {
-  fill: #756157;
-}
-
+.footer-logo-link:hover .footer-logo-academy,
 .footer-logo-link:focus .footer-logo-academy {
   fill: #756157;
 }
