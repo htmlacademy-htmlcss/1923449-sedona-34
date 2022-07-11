@@ -253,18 +253,29 @@ img {
 .section-promo {
   position: relative;
   text-align: center;
-  background-image:
-    url("../images/divider.svg"),
-    url("../images/promo-background.jpg");
+  background-image: url("../images/promo-background.jpg");
   background-color: #DC6243;
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom -1px center, center;
-  background-size: 1200px 57px, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .promo-logo {
   margin-top: 51px;
   margin-bottom: 82px;
+}
+
+.section-promo::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/divider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* advantages section */
